@@ -1,0 +1,41 @@
+<html>
+   <head>
+      <title>web dev & more... | Suning Yao</title>
+      <meta name="title" content="web dev & more... | Suning Yao">
+      <meta name="description" content="This site will redirect you to suningyao.com which is Suning Yao's portfolio website.">
+      <meta name="robots" content="index, follow">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="language" content="English">
+      <meta name="revisit-after" content="1 day">
+      <meta name="author" content="Suning Yao">
+      <style>
+         html {
+            background-color: antiquewhite;
+         }
+         img {
+            position: relative;
+            width: 60vw;
+            top: 15vh;
+            left: 20vw;
+         }
+         
+         @media screen and (max-width: 1024px) {
+            img {
+               top: 25vh;
+            }
+         }
+      </style>
+      <script type = "text/javascript">
+         const redirect = () => {
+               window.location = "https://suningyao.com";
+               console.log('...redirecting to suningyao.com...')
+         }
+         setTimeout(() => {
+            redirect()
+         }, 1500)
+      </script>
+   </head>
+   <body>
+      <img src='ascii.png' alt="redirecting to suningyao.com"/>
+   </body>
+</html>
